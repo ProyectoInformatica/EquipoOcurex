@@ -1,44 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.shape.Line?>
-<?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
-
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1024.0" prefWidth="1440.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <AnchorPane prefHeight="1029.0" prefWidth="415.0" style="-fx-background-color: #393939;">
-         <children>
-            <ImageView fitHeight="231.0" fitWidth="238.0" layoutX="91.0" layoutY="274.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@design/ocurex-logo.png" />
-               </image>
-            </ImageView>
-            <Text fill="#25a390" layoutX="78.0" layoutY="569.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ocurex">
-               <font>
-                  <Font name="Apple Braille Outline 6 Dot" size="74.0" />
-               </font>
-            </Text>
-            <Text fill="#25a390" layoutX="82.0" layoutY="593.0" strokeType="OUTSIDE" strokeWidth="0.0" text="made for your security">
-               <font>
-                  <Font name="Apple Braille Outline 6 Dot" size="24.0" />
-               </font>
-            </Text>
-         </children>
-      </AnchorPane>
-      <AnchorPane layoutX="408.0" prefHeight="1029.0" prefWidth="1034.0" style="-fx-background-color: #25A390;">
-         <children>
-            <ImageView fitHeight="86.0" fitWidth="80.0" layoutX="199.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@design/user-icon.png" />
-               </image>
-            </ImageView>
-            <Line endX="100.0" layoutX="540.0" layoutY="359.0" startX="-219.42657470703125" startY="3.0517578125E-5" />
-            <Line endX="100.0" layoutX="540.0" layoutY="500.0" startX="-219.42657470703125" startY="3.0517578125E-5" />
-         </children>
-      </AnchorPane>
+      <AnchorPane layoutY="-16.0" prefHeight="107.0" prefWidth="1440.0" style="-fx-background-color: #393939;" />
+      <AnchorPane layoutY="92.0" prefHeight="941.0" prefWidth="1440.0" style="-fx-background-color: #25A390;" />
    </children>
 </AnchorPane>
