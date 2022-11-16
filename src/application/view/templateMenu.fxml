@@ -6,10 +6,9 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1024.0" prefWidth="1440.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="824.0" prefWidth="1240.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <AnchorPane prefHeight="1029.0" prefWidth="415.0" style="-fx-background-color: #393939;">
+      <AnchorPane prefHeight="829.0" prefWidth="415.0" style="-fx-background-color: #393939;">
          <children>
             <ImageView fitHeight="231.0" fitWidth="238.0" layoutX="91.0" layoutY="274.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -28,6 +27,6 @@
             </Text>
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="408.0" prefHeight="1029.0" prefWidth="1034.0" style="-fx-background-color: #25A390;" />
+      <AnchorPane layoutX="408.0" prefHeight="829.0" prefWidth="834.0" style="-fx-background-color: #25A390;" />
    </children>
 </AnchorPane>

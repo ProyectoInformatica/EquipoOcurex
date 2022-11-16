@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DisplacementMap?>
+<?import javafx.scene.effect.FloatMap?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -12,8 +16,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="824.0" prefWidth="1240.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <GridPane layoutX="622.0" layoutY="158.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <columnConstraints>
@@ -24,7 +27,7 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="sidebar" stylesheets="@application.css">
+            <VBox alignment="CENTER" prefHeight="829.0" prefWidth="415.0" styleClass="sidebar" stylesheets="@application.css">
                <children>
                   <ImageView fitHeight="396.0" fitWidth="309.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -51,7 +54,7 @@
             </VBox>
             <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
                <children>
-                  <GridPane prefHeight="1080.0" prefWidth="1347.0" styleClass="parent" stylesheets="@application.css">
+                  <GridPane prefHeight="819.0" prefWidth="931.0" styleClass="parent" stylesheets="@application.css">
                     <columnConstraints>
                       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                     </columnConstraints>
@@ -66,29 +69,74 @@
                      <children>
                         <VBox alignment="BOTTOM_CENTER" prefHeight="200.0" prefWidth="100.0">
                            <children>
-                              <JFXButton prefHeight="110.0" prefWidth="300.0" styleClass="loginBtn" stylesheets="@application.css" text="Administración">
+                              <JFXButton prefHeight="51.0" prefWidth="168.0" styleClass="loginBtn" stylesheets="@application.css" text="Volver">
+                                 <VBox.margin>
+                                    <Insets bottom="230.0" right="1100.0" />
+                                 </VBox.margin>
                                  <font>
-                                    <Font size="36.0" />
+                                    <Font size="24.0" />
                                  </font>
                               </JFXButton>
+                              <ImageView fitHeight="48.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@design/person@2x.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets bottom="-40.0" right="730.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                              <JFXTextField focusColor="WHITE" labelFloat="true" prefHeight="31.0" prefWidth="1114.0" promptText="Usuario" styleClass="forgetLabel" stylesheets="@application.css" unFocusColor="BLACK">
+                                 <VBox.margin>
+                                    <Insets left="350.0" right="200.0" />
+                                 </VBox.margin>
+                                 <effect>
+                                    <DisplacementMap>
+                                       <mapData>
+                                          <FloatMap />
+                                       </mapData>
+                                    </DisplacementMap>
+                                 </effect>
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </JFXTextField>
                            </children>
                         </VBox>
                         <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="1">
                            <children>
-                              <JFXButton prefHeight="110.0" prefWidth="300.0" styleClass="loginBtn" stylesheets="@application.css" text="Seguridad">
+                              <JFXPasswordField focusColor="WHITE" labelFloat="true" prefHeight="31.0" prefWidth="1005.0" promptText="Contraseña" unFocusColor="BLACK">
+                                 <VBox.margin>
+                                    <Insets left="350.0" right="200.0" />
+                                 </VBox.margin>
                                  <font>
-                                    <Font size="36.0" />
+                                    <Font size="18.0" />
                                  </font>
-                              </JFXButton>
+                              </JFXPasswordField>
+                              <ImageView fitHeight="52.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@design/lock.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets bottom="-45.0" right="720.0" />
+                                 </VBox.margin>
+                              </ImageView>
                            </children>
                         </VBox>
                         <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="2">
                            <children>
-                              <JFXButton prefHeight="110.0" prefWidth="300.0" styleClass="loginBtn" stylesheets="@application.css" text="Salud">
+                              <JFXButton defaultButton="true" prefHeight="76.0" prefWidth="300.0" styleClass="loginBtn" stylesheets="@application.css" text="Iniciar Sesión">
                                  <font>
                                     <Font size="36.0" />
                                  </font>
                               </JFXButton>
+                              <Label prefHeight="105.0" prefWidth="233.0" styleClass="forgetLabel" stylesheets="@application.css" text="Recuperar contraseña">
+                                 <VBox.margin>
+                                    <Insets left="1000.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
                            </children>
                         </VBox>
                      </children>

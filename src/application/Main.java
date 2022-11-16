@@ -13,7 +13,7 @@ public class Main extends Application {
 	public void start(Stage primaryStage) {
 		try {
 			primaryStage.setTitle("Ocurex");
-			FXMLLoader loader = new FXMLLoader(getClass().getResource("/application/SeleccionUsuario.fxml"));
+			FXMLLoader loader = new FXMLLoader(getClass().getResource("/application/view/IniciarSesion.fxml"));
 			ControladorOcurex controlador = new ControladorOcurex();
 			loader.setController(controlador);
 			Parent root = loader.load();
