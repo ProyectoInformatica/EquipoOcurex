@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
-<?import com.jfoenix.controls.JFXPasswordField?>
-<?import com.jfoenix.controls.JFXTextField?>
-<?import javafx.scene.effect.DisplacementMap?>
-<?import javafx.scene.effect.FloatMap?>
+<?import com.jfoenix.controls.JFXTextArea?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -34,41 +31,29 @@
       </AnchorPane>
       <AnchorPane layoutX="408.0" prefHeight="829.0" prefWidth="834.0" style="-fx-background-color: #25A390;">
          <children>
-            <JFXButton layoutX="17.0" layoutY="26.0" prefHeight="51.0" prefWidth="168.0" styleClass="loginBtn" stylesheets="@application.css" text="Volver">
-               <font>
-                  <Font size="24.0" />
-               </font>
-            </JFXButton>
-            <ImageView fitHeight="48.0" fitWidth="46.0" layoutX="181.0" layoutY="322.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="100.0" layoutY="231.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../design/person@2x.png" />
                </image>
             </ImageView>
-            <JFXTextField fx:id="usuario" focusColor="WHITE" labelFloat="true" layoutX="251.0" layoutY="330.0" prefHeight="35.0" prefWidth="374.0" promptText="Usuario" styleClass="forgetLabel" stylesheets="@application.css" unFocusColor="BLACK">
-               <effect>
-                  <DisplacementMap>
-                     <mapData>
-                        <FloatMap />
-                     </mapData>
-                  </DisplacementMap>
-               </effect>
+            <JFXTextArea fx:id="usuario" layoutX="206.0" layoutY="225.0" prefHeight="52.0" prefWidth="426.0" promptText="Usuario" styleClass="forgetLabel" stylesheets="@../application.css">
                <font>
-                  <Font size="18.0" />
+                  <Font name="SF Compact" size="23.0" />
                </font>
-            </JFXTextField>
-            <JFXPasswordField fx:id="password" focusColor="WHITE" labelFloat="true" layoutX="249.0" layoutY="509.0" prefHeight="35.0" prefWidth="431.0" promptText="Contraseña" unFocusColor="BLACK">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </JFXPasswordField>
-            <ImageView fitHeight="52.0" fitWidth="36.0" layoutX="184.0" layoutY="505.0" pickOnBounds="true" preserveRatio="true">
+            </JFXTextArea>
+            <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="107.0" layoutY="366.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../design/lock.png" />
                </image>
             </ImageView>
-            <JFXButton fx:id="iniciarSesion" defaultButton="true" layoutX="296.0" layoutY="599.0" prefHeight="76.0" prefWidth="300.0" styleClass="loginBtn" stylesheets="@application.css" text="Iniciar Sesión">
+            <JFXTextArea fx:id="password" layoutX="205.0" layoutY="355.0" prefHeight="64.0" prefWidth="423.0" promptText="Contraseña" styleClass="forgetLabel" stylesheets="@../application.css">
                <font>
-                  <Font size="36.0" />
+                  <Font size="27.0" />
+               </font>
+            </JFXTextArea>
+            <JFXButton layoutX="281.0" layoutY="534.0" prefHeight="83.0" prefWidth="171.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@../application.css" text="Iniciar Sesion">
+               <font>
+                  <Font size="20.0" />
                </font>
             </JFXButton>
          </children></AnchorPane>

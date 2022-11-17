@@ -4,7 +4,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="824.0" prefWidth="1240.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <AnchorPane prefHeight="107.0" prefWidth="1240.0" style="-fx-background-color: #393939;" />
+      <AnchorPane layoutX="-38.0" layoutY="-20.0" prefHeight="127.0" prefWidth="1278.0" style="-fx-background-color: #393939;" />
       <AnchorPane layoutY="92.0" prefHeight="741.0" prefWidth="1240.0" style="-fx-background-color: #25A390;" />
    </children>
 </AnchorPane>
