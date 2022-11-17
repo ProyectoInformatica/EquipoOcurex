@@ -1,5 +1,6 @@
 package application;
 	
+import application.controller.CIniciarSesion;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
@@ -14,7 +15,7 @@ public class Main extends Application {
 		try {
 			primaryStage.setTitle("Ocurex");
 			FXMLLoader loader = new FXMLLoader(getClass().getResource("/application/view/IniciarSesion.fxml"));
-			ControladorOcurex controlador = new ControladorOcurex();
+			CIniciarSesion controlador = new CIniciarSesion();
 			loader.setController(controlador);
 			Parent root = loader.load();
 			
