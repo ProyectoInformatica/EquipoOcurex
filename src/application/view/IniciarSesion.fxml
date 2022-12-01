@@ -36,7 +36,7 @@
                   <Image url="@../design/person@2x.png" />
                </image>
             </ImageView>
-            <JFXTextArea fx:id="usuario" layoutX="206.0" layoutY="225.0" prefHeight="52.0" prefWidth="426.0" promptText="Usuario" styleClass="forgetLabel" stylesheets="@../application.css">
+            <JFXTextArea fx:id="usuario" layoutX="206.0" layoutY="225.0" prefHeight="52.0" prefWidth="426.0" promptText="Usuario" styleClass="forgetLabel" stylesheets="@../design/application.css">
                <font>
                   <Font name="SF Compact" size="23.0" />
                </font>
@@ -46,12 +46,12 @@
                   <Image url="@../design/lock.png" />
                </image>
             </ImageView>
-            <JFXTextArea fx:id="password" layoutX="205.0" layoutY="355.0" prefHeight="64.0" prefWidth="423.0" promptText="Contraseña" styleClass="forgetLabel" stylesheets="@../application.css">
+            <JFXTextArea fx:id="password" layoutX="205.0" layoutY="355.0" prefHeight="64.0" prefWidth="423.0" promptText="Contraseña" styleClass="forgetLabel" stylesheets="@../design/application.css">
                <font>
                   <Font size="27.0" />
                </font>
             </JFXTextArea>
-            <JFXButton layoutX="281.0" layoutY="534.0" prefHeight="83.0" prefWidth="171.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@../application.css" text="Iniciar Sesion">
+            <JFXButton layoutX="281.0" layoutY="534.0" prefHeight="83.0" prefWidth="171.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@../design/application.css" text="Iniciar Sesion">
                <font>
                   <Font size="20.0" />
                </font>

@@ -18,15 +18,12 @@ public class Main extends Application {
 			CIniciarSesion controlador = new CIniciarSesion();
 			loader.setController(controlador);
 			Parent root = loader.load();
-			
-			
 			primaryStage.setScene(new Scene(root));
 			primaryStage.show();
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
 	}
-	
 	public static void main(String[] args) {
 		launch(args);
 	}
