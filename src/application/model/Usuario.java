@@ -1,30 +1,33 @@
 package application.model;
 
+import java.time.LocalDate;
+
+
 public class Usuario {
-	private String identificador;
+	private String emailUsuario;
 	private String nombre;
 	private String apellido;
 	private int telefono;
 	private String domicilio;
 	private String sexo;
+	private LocalDate fechaEntrada;
 	
-	public Usuario(String identificador,String nombre, String apellido, int telefono, String domicilio, String sexo) {
-		super();
-		this.identificador=identificador;
+	public Usuario(String emailUsuario, String nombre, String apellido, int telefono, String domicilio,String sexo, LocalDate fechaEntrada) {
+		this.emailUsuario = emailUsuario;
 		this.nombre = nombre;
 		this.apellido = apellido;
 		this.telefono = telefono;
 		this.domicilio = domicilio;
 		this.sexo = sexo;
-	}
-	
-
-	public String getIdentificador() {
-		return identificador;
+		this.fechaEntrada = fechaEntrada;
 	}
 
-	public void setIdentificador(String identificador) {
-		this.identificador = identificador;
+	public String getEmailUsuario() {
+		return emailUsuario;
+	}
+
+	public void setEmailUsuario(String emailUsuario) {
+		this.emailUsuario = emailUsuario;
 	}
 
 	public String getNombre() {
@@ -65,5 +68,13 @@ public class Usuario {
 
 	public void setSexo(String sexo) {
 		this.sexo = sexo;
+	}
+
+	public LocalDate getFechaEntrada() {
+		return fechaEntrada;
+	}
+
+	public void setFechaEntrada(LocalDate fechaEntrada) {
+		this.fechaEntrada = fechaEntrada;
 	}
 }
