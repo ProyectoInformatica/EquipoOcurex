@@ -4,48 +4,60 @@ import com.jfoenix.controls.JFXTextArea;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-import javafx.scene.Node;
 
-public class CIniciarSesion {
-
-    @FXML
-    private JFXTextArea usuario;
+public class CRegistrarDoctor {
 
     @FXML
-    private JFXTextArea password;
+    private JFXTextArea jfxSexo;
 
     @FXML
-    private JFXButton btnIniciarSesion;
+    private JFXTextArea jfxEmail;
 
     @FXML
-    private JFXButton btnRegistrarse;
+    private JFXTextArea jfxNombre;
 
     @FXML
-    void iniciarSesion(ActionEvent event) {
+    private JFXTextArea jfxTelefono;
+
+    @FXML
+    private JFXTextArea jfxApellido;
+
+    @FXML
+    private JFXTextArea jfxDomicilio;
+
+    @FXML
+    private JFXButton btnContinuar;
+
+    @FXML
+    private JFXButton btnVolverAlMenu;
+
+    @FXML
+    void continuar(ActionEvent event) {
 
     }
 
     @FXML
-    void registrarse(ActionEvent event) {
+    void volverAlMenu(ActionEvent event) {
     	// ---------------------------Forma generica de llamar a una nueva ventana desde otra, es lo mismo siempre, tengo que cambiar los nombre de los paramentos nada mas, y el path del get source.---------------------------
-		
+    	
     	try {
  
-			FXMLLoader loader2 = new FXMLLoader(getClass().getResource("/application/view/RegistrarseMenu.fxml")); //Cargo el loader
+			FXMLLoader loader8 = new FXMLLoader(getClass().getResource("/application/view/IniciarSesion.fxml")); //Cargo el loader
 			
-			CRegistrarMenu controlador2 = new CRegistrarMenu(); //creo el controlador
+			CIniciarSesion controlador8 = new CIniciarSesion(); //creo el controlador
+		
+			loader8.setController(controlador8); //seteo el controlador con el loader que cree antes.
 			
-			loader2.setController(controlador2); //seteo el controlador con el loader que cree antes.
-			
-			Parent root2 = loader2.load(); //lo pongo como parent
+			Parent root8 = loader8.load(); //lo pongo como parent
 			
 			Stage stage = new Stage();
 			
-			stage.setScene(new Scene(root2));//lo seteo como primary stage
+			stage.setScene(new Scene(root8));//lo seteo como primary stage
 						
 			stage.initModality(Modality.WINDOW_MODAL);//para poder abrir solo una ventana.
 						

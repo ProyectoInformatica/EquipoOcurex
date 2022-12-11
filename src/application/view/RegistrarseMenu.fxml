@@ -19,22 +19,22 @@
          </children></AnchorPane>
       <AnchorPane layoutY="92.0" prefHeight="741.0" prefWidth="1240.0" style="-fx-background-color: #25A390;">
          <children>
-            <JFXButton fx:id="btnVolverAlMenu" layoutX="1055.0" layoutY="644.0" prefHeight="83.0" prefWidth="171.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@../design/application.css" text="Vovler al menu">
+            <JFXButton fx:id="btnVolverAlMenu" layoutX="1055.0" layoutY="644.0" onAction="#volverAlMenu" prefHeight="83.0" prefWidth="171.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@../design/application.css" text="Vovler al menu">
                <font>
                   <Font size="20.0" />
                </font>
             </JFXButton>
-            <JFXButton fx:id="btnDirector" layoutX="479.0" layoutY="183.0" prefHeight="117.0" prefWidth="261.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@../design/application.css" text="Director">
+            <JFXButton fx:id="btnDirector" layoutX="479.0" layoutY="183.0" onAction="#registrarDirector" prefHeight="117.0" prefWidth="261.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@../design/application.css" text="Director">
                <font>
                   <Font size="20.0" />
                </font>
             </JFXButton>
-            <JFXButton fx:id="btnDoctor" layoutX="479.0" layoutY="310.0" prefHeight="117.0" prefWidth="261.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@../design/application.css" text="Doctor">
+            <JFXButton fx:id="btnDoctor" layoutX="479.0" layoutY="310.0" onAction="#registrarDoctor" prefHeight="117.0" prefWidth="261.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@../design/application.css" text="Doctor">
                <font>
                   <Font size="20.0" />
                </font>
             </JFXButton>
-            <JFXButton fx:id="btnSeguridad" layoutX="479.0" layoutY="442.0" prefHeight="117.0" prefWidth="261.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@../design/application.css" text="Seguridad">
+            <JFXButton fx:id="btnSeguridad" layoutX="479.0" layoutY="442.0" onAction="#registrarSeguridad" prefHeight="117.0" prefWidth="261.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@../design/application.css" text="Seguridad">
                <font>
                   <Font size="20.0" />
                </font>

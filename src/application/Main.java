@@ -13,13 +13,19 @@ public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) {
 		try {
-			primaryStage.setTitle("Ocurex");
-			FXMLLoader loader = new FXMLLoader(getClass().getResource("/application/view/IniciarSesion.fxml"));
-			CIniciarSesion controlador = new CIniciarSesion();
-			loader.setController(controlador);
-			Parent root = loader.load();
-			primaryStage.setScene(new Scene(root));
-			primaryStage.show();
+
+			FXMLLoader loader = new FXMLLoader(getClass().getResource("/application/view/IniciarSesion.fxml")); //Cargo el loader
+			
+			CIniciarSesion controlador = new CIniciarSesion(); //creo el controlador
+			
+			loader.setController(controlador); //seteo el controlador con el loader que cree antes.
+			
+			Parent root = loader.load(); //lo pongo como parent
+			
+			primaryStage.setScene(new Scene(root));//lo seteo como primary stage
+			
+			primaryStage.show();//muestro la el archivo.
+			
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
