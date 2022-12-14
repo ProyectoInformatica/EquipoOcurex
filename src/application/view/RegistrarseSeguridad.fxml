@@ -49,12 +49,12 @@
                   <Font size="30.0" />
                </font>
             </JFXTextArea>
-            <JFXButton fx:id="btnContinuar" layoutX="647.0" layoutY="641.0" onAction="#continuar" prefHeight="83.0" prefWidth="171.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@../design/application.css" text="Continuar">
+            <JFXButton fx:id="btnContinuar" layoutX="648.0" layoutY="608.0" onAction="#continuar" prefHeight="83.0" prefWidth="171.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@../design/application.css" text="Continuar">
                <font>
                   <Font size="20.0" />
                </font>
             </JFXButton>
-            <JFXButton fx:id="btnVolverAlMenu" layoutX="437.0" layoutY="641.0" onAction="#volverAlMenu" prefHeight="83.0" prefWidth="171.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@../design/application.css" text="Vovler al menu">
+            <JFXButton fx:id="btnVolverAlMenu" layoutX="437.0" layoutY="608.0" onAction="#volverAlMenu" prefHeight="83.0" prefWidth="171.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@../design/application.css" text="Vovler al menu">
                <font>
                   <Font size="20.0" />
                </font>

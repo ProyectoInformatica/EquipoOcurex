@@ -19,7 +19,7 @@
          </children></AnchorPane>
       <AnchorPane layoutY="92.0" prefHeight="741.0" prefWidth="1240.0" style="-fx-background-color: #25A390;">
          <children>
-            <JFXButton fx:id="btnVolverAlMenu" layoutX="1055.0" layoutY="644.0" onAction="#volverAlMenu" prefHeight="83.0" prefWidth="171.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@../design/application.css" text="Vovler al menu">
+            <JFXButton fx:id="btnVolverAlMenu" layoutX="1055.0" layoutY="589.0" onAction="#volverAlMenu" prefHeight="83.0" prefWidth="171.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@../design/application.css" text="Vovler al menu">
                <font>
                   <Font size="20.0" />
                </font>
