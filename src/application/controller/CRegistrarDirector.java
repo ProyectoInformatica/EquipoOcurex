@@ -1,6 +1,20 @@
 package application.controller;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.time.LocalDate;
+import java.util.Vector;
+
+//json
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.google.gson.reflect.TypeToken;
+
+//jfoenix
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXTextArea;
+
+//javafx
+import application.model.Director;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -91,6 +105,8 @@ public class CRegistrarDirector {
 			stage.setScene(scene);
 			
 			stage.show();
+			
+			serializar_Array_A_Json_Director();
 						
 			priorStage.close();	
 
@@ -100,4 +116,22 @@ public class CRegistrarDirector {
 		}
 		//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     }	
+    
+	public void serializar_Array_A_Json_Director() {
+		//Director director = new Director("Hola","Hola","Hola",1,"Hola","Hola",LocalDate.now());
+		Vector<Director> directores = new Vector<Director>();
+		directores.add(new Director("Hola","Hola","Hola",1,"Hola","Hola",LocalDate.now()));
+
+		
+		Gson prettyGson = new GsonBuilder().setPrettyPrinting().create();
+		String representacionBonita = prettyGson.toJson(directores);
+		System.out.println(representacionBonita);
+		
+		try(FileWriter writer = new FileWriter("dirdirdirdir.json")){
+			prettyGson.toJson(directores, writer);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+		
+	}
 }
