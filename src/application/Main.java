@@ -10,8 +10,12 @@ import javafx.scene.layout.BorderPane;
 
 
 public class Main extends Application {
+	
+
+	
 	@Override
 	public void start(Stage primaryStage) {
+		
 		try {
 
 			FXMLLoader loader = new FXMLLoader(getClass().getResource("/application/view/IniciarSesion.fxml")); //Cargo el loader
@@ -25,6 +29,7 @@ public class Main extends Application {
 			primaryStage.setScene(new Scene(root));//lo seteo como primary stage
 			
 			primaryStage.show();//muestro la el archivo.
+		
 			
 		} catch(Exception e) {
 			e.printStackTrace();

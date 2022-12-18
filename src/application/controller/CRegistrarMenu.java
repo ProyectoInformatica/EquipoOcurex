@@ -23,10 +23,13 @@ public class CRegistrarMenu {
     @FXML
     private JFXButton btnSeguridad;
 
+    
     @FXML
     void registrarDirector(ActionEvent event) {
-	// ---------------------------Forma generica de llamar a una nueva ventana desde otra, es lo mismo siempre, tengo que cambiar los nombre de los paramentos nada mas, y el path del get source.---------------------------
-		
+    	// ---------------------------Forma generica de llamar a una nueva ventana desde otra, es lo mismo siempre, tengo que cambiar los nombre de los paramentos nada mas, y el path del get source.---------------------------
+    	Stage priorStage1 = (Stage)btnDirector.getScene().getWindow();
+		Stage stage1 = new Stage();
+
     	try {
  
 			FXMLLoader loader3 = new FXMLLoader(getClass().getResource("/application/view/RegistrarseDirector.fxml")); //Cargo el loader
@@ -37,26 +40,24 @@ public class CRegistrarMenu {
 			
 			Parent root3 = loader3.load(); //lo pongo como parent
 			
-			Stage stage = new Stage();
+			Scene scene = new Scene( root3 );
 			
-			stage.setScene(new Scene(root3));//lo seteo como primary stage
-						
-			stage.initModality(Modality.WINDOW_MODAL);//para poder abrir solo una ventana.
-						
-			stage.initOwner(((Node) (event.getSource())).getScene().getWindow()); //para poder abrir solo una ventana, seteo el owner.
+			stage1.setScene(scene);
 			
-			stage.show();//muestro la el archivo.
+			stage1.show();
 			
+			priorStage1.close();			
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
-		//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     }
 
     @FXML
     void registrarDoctor(ActionEvent event) {
-	// ---------------------------Forma generica de llamar a una nueva ventana desde otra, es lo mismo siempre, tengo que cambiar los nombre de los paramentos nada mas, y el path del get source.---------------------------
-		
+    	// ---------------------------Forma generica de llamar a una nueva ventana desde otra, es lo mismo siempre, tengo que cambiar los nombre de los paramentos nada mas, y el path del get source.---------------------------
+    	Stage priorStage1 = (Stage)btnDoctor.getScene().getWindow();
+		Stage stage1 = new Stage();
+
     	try {
  
 			FXMLLoader loader4 = new FXMLLoader(getClass().getResource("/application/view/RegistrarseDoctor.fxml")); //Cargo el loader
@@ -67,26 +68,24 @@ public class CRegistrarMenu {
 			
 			Parent root4 = loader4.load(); //lo pongo como parent
 			
-			Stage stage = new Stage();
+			Scene scene = new Scene( root4 );
 			
-			stage.setScene(new Scene(root4));//lo seteo como primary stage
-						
-			stage.initModality(Modality.WINDOW_MODAL);//para poder abrir solo una ventana.
-						
-			stage.initOwner(((Node) (event.getSource())).getScene().getWindow()); //para poder abrir solo una ventana, seteo el owner.
+			stage1.setScene(scene);
 			
-			stage.show();//muestro la el archivo.
+			stage1.show();
 			
+			priorStage1.close();			
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
-		//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     }
 
     @FXML
     void registrarSeguridad(ActionEvent event) {
-	// ---------------------------Forma generica de llamar a una nueva ventana desde otra, es lo mismo siempre, tengo que cambiar los nombre de los paramentos nada mas, y el path del get source.---------------------------
-		
+    	// ---------------------------Forma generica de llamar a una nueva ventana desde otra, es lo mismo siempre, tengo que cambiar los nombre de los paramentos nada mas, y el path del get source.---------------------------
+    	Stage priorStage2 = (Stage)btnSeguridad.getScene().getWindow();
+		Stage stage2 = new Stage();
+
     	try {
  
 			FXMLLoader loader5 = new FXMLLoader(getClass().getResource("/application/view/RegistrarseSeguridad.fxml")); //Cargo el loader
@@ -97,26 +96,25 @@ public class CRegistrarMenu {
 			
 			Parent root5 = loader5.load(); //lo pongo como parent
 			
-			Stage stage = new Stage();
+			Scene scene = new Scene( root5 );
 			
-			stage.setScene(new Scene(root5));//lo seteo como primary stage
-						
-			stage.initModality(Modality.WINDOW_MODAL);//para poder abrir solo una ventana.
-						
-			stage.initOwner(((Node) (event.getSource())).getScene().getWindow()); //para poder abrir solo una ventana, seteo el owner.
+			stage2.setScene(scene);
 			
-			stage.show();//muestro la el archivo.
+			stage2.show();
 			
+			priorStage2.close();
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
-		//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     }
 
     @FXML
     void volverAlMenu(ActionEvent event) {
 	// ---------------------------Forma generica de llamar a una nueva ventana desde otra, es lo mismo siempre, tengo que cambiar los nombre de los paramentos nada mas, y el path del get source.---------------------------
 		
+    Stage priorStage = (Stage)btnVolverAlMenu.getScene().getWindow();
+
+    Stage stage1 = new Stage();
     	try {
  
 			FXMLLoader loader6 = new FXMLLoader(getClass().getResource("/application/view/IniciarSesion.fxml")); //Cargo el loader
@@ -127,17 +125,14 @@ public class CRegistrarMenu {
 			
 			Parent root6 = loader6.load(); //lo pongo como parent
 			
-			Stage stage = new Stage();
+			Scene scene = new Scene( root6 );
 			
-			stage.setScene(new Scene(root6));//lo seteo como primary stage
-						
-			stage.initModality(Modality.WINDOW_MODAL);//para poder abrir solo una ventana.
-						
-			stage.initOwner(((Node) (event.getSource())).getScene().getWindow()); //para poder abrir solo una ventana, seteo el owner.
-			
-			stage.show();//muestro la el archivo.
-			
-		} catch(Exception e) {
+			stage1.setScene(scene);
+					
+			stage1.show();
+								
+			priorStage.close();			
+			} catch(Exception e) {
 			e.printStackTrace();
 		}
 		//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
