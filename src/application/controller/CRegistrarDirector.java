@@ -106,7 +106,7 @@ public class CRegistrarDirector {
 			
 			stage.show();
 			
-			serializar_Array_A_Json_Director();
+			//serializar_Array_A_Json_Director();
 						
 			priorStage.close();	
 
